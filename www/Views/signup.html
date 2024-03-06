@@ -1,0 +1,51 @@
+<div class="centers">
+    <div class="container-input">
+        <span id="icon">
+            <i class="fa-solid fa-user icolor"></i>
+        </span>
+        <input class="input type" type="email" placeholder="Name.lastname@uttn.mx">
+    </div>
+    <div class="container-input">
+        <span id="icon">
+            <i class="fa-solid fa-envelope icolor"></i>
+        </span>
+        <input class="input type" type="email" placeholder="Name.lastname@uttn.mx">
+    </div>
+    <div class="container-input">
+        <span id="icon">
+            <i class="fa-solid fa-lock icolor"></i>
+        </span>
+        <input class="input type" type="password" placeholder="Password">
+    </div>  
+    <div class="container-button">
+        <button class="buttonsign color type1" type="button">Sign Up</button>
+    </div>
+    <div class="container-button">
+        <div class="lol">
+            <div class="lols"><hr></div>
+                <span class="tc">Or</span>
+            <div class="lols"><hr></div>
+        </div>
+    </div>
+        <div class="container-button">
+            <button class="buttonlog type1 login-view" type="button">Log In</button>
+        </div>
+    </div>
+</div>
+
+<style>
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-size: cover;
+    background-image: url("Assets/img/FondoUTTN.svg");
+}
+</style>
+
+<script>
+    document.querySelector('.login-view').addEventListener('click',function(){
+        loadPartialView('login',document.querySelector('.app'), false);
+    })
+</script>
